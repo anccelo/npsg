@@ -83,5 +83,6 @@
 
 	<modules>
 		<module>npsg-cloud</module>
+		<module>npsg-admin</module>
 	</modules>
 </project>
