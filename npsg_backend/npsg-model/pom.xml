@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.npsg</groupId>
-	<artifactId>npsg-admin</artifactId>
+	<artifactId>npsg-model</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>npsg-admin</name>
-	<description>section dedicated to club administrators</description>
+	<name>npsg-model</name>
+	<description>bean and entity of project npsg</description>
 
 	<parent>
 		<groupId>com</groupId>
@@ -35,8 +35,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
-		
 	</dependencies>
 
 	<build>
