@@ -9,4 +9,5 @@ public class NpsgModelApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(NpsgModelApplication.class, args);
 	}
+
 }
