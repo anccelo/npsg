@@ -1,7 +1,16 @@
-package com.npsg.model.bean;
+package com.npsg.model.entities;
 
-public class Match {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 
+@Entity
+public class MatchEntity {
+	@Id
+	@SequenceGenerator(name = "seqMatch", sequenceName = "seq_match")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqMatch")
 	private int Id;
 	private String opponents;
 	private boolean inHome;

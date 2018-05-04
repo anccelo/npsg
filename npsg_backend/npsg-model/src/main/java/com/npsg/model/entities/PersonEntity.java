@@ -16,8 +16,9 @@ import javax.persistence.SequenceGenerator;
 public class PersonEntity {
 
 	@Id
-	@SequenceGenerator(name = "seq", sequenceName = "person_seq")
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq")
+	@SequenceGenerator(name = "seqPerson", sequenceName = "seq_person")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqPerson")
+
 	private int idPerson;
 	private String name;
 	private String surname;
