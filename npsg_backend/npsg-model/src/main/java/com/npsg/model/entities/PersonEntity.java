@@ -1,4 +1,4 @@
-package com.npsg.model.Entities;
+package com.npsg.model.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
