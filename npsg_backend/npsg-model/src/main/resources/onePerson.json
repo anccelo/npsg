@@ -1,0 +1,12 @@
+{
+	"idPerson":null,
+	"name":"Angelo",
+	"surname":"La Greca",
+	"email": "anccelo@iol.it",
+	"phoneNumber1" :"0612877642",
+	"phoneNumber2":null,
+	"birthDate": "25/01/1981",
+	"birthPlace":"Napoli",
+	"domicile": "Paris",
+	"comments": null
+}

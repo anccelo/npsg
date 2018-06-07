@@ -1,5 +1,7 @@
 package com.npsg.model.entities;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -7,13 +9,14 @@ import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.SequenceGenerator;
-/* https://blog.axopen.com/2014/03/hibernate-4-heritage-mapping-strategies/
- * spunti per cercare di risolvere l'ereditartità tre entità
- * */
 
+import org.springframework.stereotype.Component;
+
+@Component
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-public class PersonEntity {
+public class PersonEntity implements Serializable {
+	private static final long serialVersionUID = 1L;
 
 	@Id
 	@SequenceGenerator(name = "seqPerson", sequenceName = "seq_person")
