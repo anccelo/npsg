@@ -1,5 +1,8 @@
 package com.npsg.admin.service;
 
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,10 +16,23 @@ public class PersonService {
 	private PersonDAO personDao;
 
 	public String createPersonService(PersonEntity personEntity) {
-		System.out.println(personEntity.getDomicile());
-
 		personDao.save(personEntity);
 		return "registrato";
 	}
 
+	public List<PersonEntity> getAllPersonService() {
+		return personDao.findAll();
+	}
+
+	public Optional<PersonEntity> getOnePersonService(Integer id) {
+		return personDao.findById(id);
+	}
+
+	public Boolean deleteOnePersonService(int id) {
+		if (personDao.existsById(id)) {
+			personDao.deleteById(id);
+			return true;
+		} else
+			return false;
+	}
 }

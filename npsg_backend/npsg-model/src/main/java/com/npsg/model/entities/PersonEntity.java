@@ -10,9 +10,6 @@ import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.SequenceGenerator;
 
-import org.springframework.stereotype.Component;
-
-@Component
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 public class PersonEntity implements Serializable {
