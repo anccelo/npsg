@@ -17,6 +17,9 @@ public class MatchEntity {
 	private String date;
 	private String comment;
 
+	public MatchEntity() {
+	}
+
 	public int getId() {
 		return Id;
 	}

@@ -1,0 +1,17 @@
+{
+  "idPerson" : null,
+  "name" : "Angelo",
+  "surname" : "La Greca",
+  "email" : "anccelo@iol.it",
+  "phoneNumber1" : "612877642",
+  "phoneNumber2" : "sdsdsd",
+  "birthDate" : "25/01/81",
+  "birthPlace" : "Napoli",
+  "domicile" : "Paris",
+  "comments" : "Omeglio",
+  "cardNumber" : 23,
+  "type" : "onorario",
+  "inscribed" : true,
+  "registrationDate" : "19/06/2018",
+  "seasonOfMembership" : [ "2018/2019", "2019/2020" ]
+}

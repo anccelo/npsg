@@ -1,5 +1,9 @@
 package com.npsg.model.entities;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.PrimaryKeyJoinColumn;
 
@@ -11,6 +15,13 @@ public class MemberEntity extends PersonEntity {
 	private String type;// attivo , onorario, fondatore...
 	private boolean inscribed;
 	private String registrationDate;
+	@ElementCollection
+	private List<String> seasonOfMembership = new ArrayList<>();
+
+	/*
+	 * @OneToMany(targetEntity=Student.class, mappedBy="college",
+	 * fetch=FetchType.EAGER) private List<Student> students;
+	 */
 
 	public MemberEntity() {
 		super();
@@ -46,6 +57,14 @@ public class MemberEntity extends PersonEntity {
 
 	public void setRegistrationDate(String registrationDate) {
 		this.registrationDate = registrationDate;
+	}
+
+	public List<String> getSeasonOfMembership() {
+		return seasonOfMembership;
+	}
+
+	public void setSeasonOfMembership(List<String> seasonOfMembership) {
+		this.seasonOfMembership = seasonOfMembership;
 	}
 
 }

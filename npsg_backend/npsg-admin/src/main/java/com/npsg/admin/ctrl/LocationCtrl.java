@@ -4,16 +4,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.npsg.model.controller.AbstractCtrl;
-import com.npsg.model.entities.PersonEntity;
+import com.npsg.model.entities.LocationEntity;
 import com.npsg.model.service.AbstractService;
 
 @RestController
-@RequestMapping(value = "person", produces = { "application/json" })
-public class PersonCtrl extends AbstractCtrl<PersonEntity> {
+@RequestMapping(value = "/location", produces = { "application/json" })
+public class LocationCtrl extends AbstractCtrl<LocationEntity> {
 
-	public PersonCtrl(AbstractService<PersonEntity> abstractService) {
+	public LocationCtrl(AbstractService<LocationEntity> abstractService) {
 		super(abstractService);
-
 	}
 
 }
